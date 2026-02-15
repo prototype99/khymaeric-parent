@@ -3,7 +3,7 @@
 
 require scm-git refind
 
-REPOSITORY="git://git.code.sf.net/p/${PN}/code"
+SCM_REPOSITORY="git://git.code.sf.net/p/${PN}/code"
 
 REVISION="14ecfde106fe3d5b3ead5e02bf56d340770be5ff"
 
