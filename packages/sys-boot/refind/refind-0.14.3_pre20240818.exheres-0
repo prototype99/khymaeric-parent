@@ -1,0 +1,11 @@
+# Copyright 2016 Bernhard Frauendienst, 2026 Sophie Iwakura
+# Distributed under the terms of the GNU General Public License v2
+
+require scm-git refind
+
+REPOSITORY="git://git.code.sf.net/p/${PN}/code"
+
+REVISION="14ecfde106fe3d5b3ead5e02bf56d340770be5ff"
+
+PLATFORMS="~amd64"
+
