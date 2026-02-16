@@ -47,7 +47,14 @@ MYOPTIONS="
 
 DEPENDENCIES="
     build:
-        sys-boot/gnu-efi[>=3.0u]
+        efi_toolchain:gnu-efi? (
+            sys-boot/gnu-efi[>=3.0u]
+        )
+        efi_toolchain:edk2? (
+            dev-lang/python[python_abis=*] [[ description = [needed to run the script] ]]
+            sys-devel/nasm [[ description = [required for the assembly code] ]]
+            sys-devel/bc [[ description = [parts of the script use this for calculations] ]]
+        )
     recommendation:
         sys-boot/efibootmgr [[
             description = [ Used to install the bootloader entry ]
