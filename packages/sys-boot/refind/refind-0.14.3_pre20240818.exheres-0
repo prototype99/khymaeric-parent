@@ -8,5 +8,7 @@ REVISION="14ecfde106fe3d5b3ead5e02bf56d340770be5ff"
 
 require scm-git refind
 
+DOWNLOADS=""
+
 PLATFORMS="~amd64"
 
