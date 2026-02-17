@@ -51,21 +51,21 @@ DEPENDENCIES="
             sys-boot/gnu-efi[>=3.0u]
         )
         efi_toolchain:edk2? (
-            dev-lang/python[python_abis=*] [[ description = [needed to run the script] ]]
-            sys-devel/nasm [[ description = [required for the assembly code] ]]
-            sys-devel/bc [[ description = [parts of the script use this for calculations] ]]
+            #needed to run the script
+            dev-lang/python[python_abis=*]
+            #required for the assembly code
+            sys-devel/nasm
+            #parts of the script use this for calculations
+            sys-devel/bc
         )
     recommendation:
-        sys-boot/efibootmgr [[
-            description = [ Used to install the bootloader entry ]
-        ]]
-        sys-fs/parted [[
-            description = [ To locate and mount an ESP ]
-        ]]
+        #Used to install the bootloader entry
+        sys-boot/efibootmgr
+        #To locate and mount an ESP
+        sys-fs/parted
     suggestion:
-        app-crypt/sbsigntools [[
-            description = [ For signing and verifying files for UEFI Secure Boot ]
-        ]]
+        #For signing and verifying files for UEFI Secure Boot
+        app-crypt/sbsigntools
 "
 
 BUGS_TO="exherbo@nospam.obeliks.de"
