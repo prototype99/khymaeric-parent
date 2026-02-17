@@ -45,26 +45,27 @@ MYOPTIONS="
     ) [[ number-selected = exactly-one ]]
 "
 
+#efibootmgr is Used to install the bootloader entry
+#parted To locate and mount an ESP
+#sbsigntools For signing and verifying files for UEFI Secure Boot.
+#when using edk2...
+#python is needed to run the script generally,
+#bc is used for some calculations,
+#nasm is required for the assembly code
 DEPENDENCIES="
     build:
         efi_toolchain:gnu-efi? (
             sys-boot/gnu-efi[>=3.0u]
         )
         efi_toolchain:edk2? (
-            #needed to run the script
             dev-lang/python[python_abis=*]
-            #required for the assembly code
             sys-devel/nasm
-            #parts of the script use this for calculations
             sys-devel/bc
         )
     recommendation:
-        #Used to install the bootloader entry
         sys-boot/efibootmgr
-        #To locate and mount an ESP
         sys-fs/parted
     suggestion:
-        #For signing and verifying files for UEFI Secure Boot
         app-crypt/sbsigntools
 "
 
