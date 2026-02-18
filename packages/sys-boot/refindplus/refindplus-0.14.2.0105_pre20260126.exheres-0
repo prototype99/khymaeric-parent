@@ -61,7 +61,7 @@ DEPENDENCIES="
         efi_toolchain:edk2? (
             app-virtualization/edk2-ovmf
             dev-lang/python
-            sys-devel/nasm
+            dev-lang/nasm
             sys-apps/bc
         )
     recommendation:
