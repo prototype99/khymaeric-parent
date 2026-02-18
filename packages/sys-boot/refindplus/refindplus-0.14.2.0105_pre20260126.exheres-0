@@ -52,12 +52,14 @@ MYOPTIONS="
 #python is needed to run the script generally,
 #bc is used for some calculations,
 #nasm is required for the assembly code
+#edk2-ovmf isn't the most performant option.... but it's what exists for now
 DEPENDENCIES="
     build:
         efi_toolchain:gnu-efi? (
             sys-boot/gnu-efi[>=3.0u]
         )
         efi_toolchain:edk2? (
+            app-virtualization/edk2-ovmf
             dev-lang/python[python_abis=*]
             sys-devel/nasm
             sys-devel/bc
