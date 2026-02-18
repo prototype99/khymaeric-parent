@@ -60,7 +60,7 @@ DEPENDENCIES="
         )
         efi_toolchain:edk2? (
             app-virtualization/edk2-ovmf
-            dev-lang/python[python_abis=*]
+            dev-lang/python
             sys-devel/nasm
             sys-devel/bc
         )
