@@ -100,7 +100,7 @@ src_compile() {
         ;;
     esac
 
-    if option provider:edk2 ; then
+    if option efi_toolchain:edk2 ; then
         # Logic for the Python-based EDK2 build
         edo ./build_with_edk2.sh
     else
