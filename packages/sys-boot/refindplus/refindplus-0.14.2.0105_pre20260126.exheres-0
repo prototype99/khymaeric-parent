@@ -62,7 +62,7 @@ DEPENDENCIES="
             app-virtualization/edk2-ovmf
             dev-lang/python
             sys-devel/nasm
-            sys-devel/bc
+            sys-apps/bc
         )
     recommendation:
         sys-boot/efibootmgr
